@@ -51,7 +51,7 @@ class Unv_process:
         data = []
 
         # Load file
-        with open(path, 'r') as file:
+        with open(path, 'r', encoding="utf8", errors='ignore') as file:
             # For each line, will determine if this is a new data block or content
             for line in file:
                 # If this is a change of data block and save previous block to self
