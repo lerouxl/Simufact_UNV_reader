@@ -1,0 +1,4 @@
+trimesh[easy]==3.9.35
+numpy>=1.21
+pyglet
+matplotlib
