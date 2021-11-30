@@ -133,7 +133,6 @@ class Unv_process:
             Exception("Key not existing")
 
         features = getattr(self, key)
-        print(f"{features.max()} , {features.min()}")
         features = features.mean(axis=1)
         self.mesh.visual.vertex_colors = trimesh.visual.interpolate(features, color_map='viridis')
         return self.mesh.show()
