@@ -83,7 +83,7 @@ class Unv_process:
                             self.time = time
                             m, s = divmod(time, 60)
                             h, m = divmod(m, 60)
-                            self.time_human = f"{h}:{m}:{s}"
+                            self.time_human = f"{int(h)}:{int(m)}:{int(s)}"
 
         self.__extract_vertice__()  # Extract the vertices
 
