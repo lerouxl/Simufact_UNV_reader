@@ -46,6 +46,15 @@ Comparison between Simufact display and display_data:
 - `keys` -> `list` list of all available results. Can be displayed by printing the object as show in example. 
 - keys -> `ndarray`:  numpy array containing the results.
 
+## Limitation
+This reader is not an official one as is provided as is.
+The UNV files are providing some information that are not used in this reader such as:
+- Faces informations:
+<img src="https://raw.githubusercontent.com/hy-son/Simufact_UNV_reader/reader_limitation/imgs/faces_blocks.PNG">
+  
+- Vertices information:
+<img src="https://raw.githubusercontent.com/hy-son/Simufact_UNV_reader/reader_limitation/imgs/coordinate_block.PNG">
+  
 ## Errors
 ### ImportError('no graph engines available!'):
 This errors is due to the installation of trimesh.
